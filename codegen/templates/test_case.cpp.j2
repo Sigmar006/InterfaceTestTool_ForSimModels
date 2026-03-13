@@ -1,0 +1,33 @@
+TEST(AutoTest, {{ func_name }}_{{ test_id }}) {
+{% if decl_lines %}
+    // 参数声明
+{% for line in decl_lines %}
+    {{ line }}
+{% endfor %}
+
+{% endif %}
+    // 调用被测函数
+{% if return_kind != 'void' %}
+    auto result = {{ qualified_call }};
+{% if return_printable %}
+    std::cout << "[{{ func_name }}] return = " << result << std::endl;
+{% else %}
+    std::cout << "[{{ func_name }}] return (complex type)" << std::endl;
+{% endif %}
+{% else %}
+    {{ qualified_call }};
+    std::cout << "[{{ func_name }}] called successfully" << std::endl;
+{% endif %}
+{% if output_print_stmts %}
+
+    // 输出参数
+{% for stmt in output_print_stmts %}
+    {{ stmt }}
+{% endfor %}
+{% endif %}
+{% if assertion %}
+
+    // 断言
+    {{ assertion }}
+{% endif %}
+}

@@ -1,0 +1,40 @@
+cmake_minimum_required(VERSION 3.14)
+project(AutoGTestProject CXX)
+
+set(CMAKE_CXX_STANDARD {{ cpp_standard }})
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_BUILD_TYPE {{ build_type }})
+
+# ---------------------------------------------------------------------------
+# GTest dependency
+# ---------------------------------------------------------------------------
+{% if use_local_gtest %}
+# Using local GTest installation
+add_subdirectory("{{ use_local_gtest }}" googletest)
+{% else %}
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  URL {{ gtest_fetch_url }}
+)
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
+{% endif %}
+
+# ---------------------------------------------------------------------------
+# Target library (imported dynamic library)
+# ---------------------------------------------------------------------------
+add_library(target_lib SHARED IMPORTED)
+set_target_properties(target_lib PROPERTIES
+  IMPORTED_LOCATION "${CMAKE_CURRENT_SOURCE_DIR}/lib/{{ lib_filename }}"
+)
+
+# ---------------------------------------------------------------------------
+# Test executable
+# ---------------------------------------------------------------------------
+add_executable(auto_test test_main.cpp)
+target_include_directories(auto_test PRIVATE lib/)
+target_link_libraries(auto_test PRIVATE target_lib GTest::gtest_main)
+
+include(GoogleTest)
+gtest_discover_tests(auto_test)
