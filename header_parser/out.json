@@ -1,0 +1,405 @@
+{
+  "schema_version": "1.0",
+  "source_file": "D:\\Program_Files\\MyProjects\\InterfaceTestTool\\header_parser\\test_cases\\simple.h",
+  "parsed_at": "2026-03-13T06:54:38Z",
+  "compiler_args": [],
+  "functions": [
+    {
+      "name": "my_add",
+      "namespace": "",
+      "return_type": {
+        "raw": "int",
+        "canonical": "int",
+        "base_type": "int",
+        "is_const": false,
+        "is_pointer": false,
+        "is_reference": false,
+        "is_array": false,
+        "array_size": null,
+        "pointee_type": null,
+        "kind": "integer"
+      },
+      "params": [
+        {
+          "name": "a",
+          "type": {
+            "raw": "int",
+            "canonical": "int",
+            "base_type": "int",
+            "is_const": false,
+            "is_pointer": false,
+            "is_reference": false,
+            "is_array": false,
+            "array_size": null,
+            "pointee_type": null,
+            "kind": "integer"
+          },
+          "default_value": null
+        },
+        {
+          "name": "b",
+          "type": {
+            "raw": "int",
+            "canonical": "int",
+            "base_type": "int",
+            "is_const": false,
+            "is_pointer": false,
+            "is_reference": false,
+            "is_array": false,
+            "array_size": null,
+            "pointee_type": null,
+            "kind": "integer"
+          },
+          "default_value": null
+        }
+      ],
+      "is_variadic": false,
+      "source_file": "D:\\Program_Files\\MyProjects\\InterfaceTestTool\\header_parser\\test_cases\\simple.h",
+      "source_line": 7,
+      "comment": "/// Adds two integers and returns the result."
+    },
+    {
+      "name": "my_max_float",
+      "namespace": "",
+      "return_type": {
+        "raw": "float",
+        "canonical": "float",
+        "base_type": "float",
+        "is_const": false,
+        "is_pointer": false,
+        "is_reference": false,
+        "is_array": false,
+        "array_size": null,
+        "pointee_type": null,
+        "kind": "float"
+      },
+      "params": [
+        {
+          "name": "x",
+          "type": {
+            "raw": "float",
+            "canonical": "float",
+            "base_type": "float",
+            "is_const": false,
+            "is_pointer": false,
+            "is_reference": false,
+            "is_array": false,
+            "array_size": null,
+            "pointee_type": null,
+            "kind": "float"
+          },
+          "default_value": null
+        },
+        {
+          "name": "y",
+          "type": {
+            "raw": "float",
+            "canonical": "float",
+            "base_type": "float",
+            "is_const": false,
+            "is_pointer": false,
+            "is_reference": false,
+            "is_array": false,
+            "array_size": null,
+            "pointee_type": null,
+            "kind": "float"
+          },
+          "default_value": null
+        }
+      ],
+      "is_variadic": false,
+      "source_file": "D:\\Program_Files\\MyProjects\\InterfaceTestTool\\header_parser\\test_cases\\simple.h",
+      "source_line": 10,
+      "comment": "/// Returns the maximum of two floats."
+    },
+    {
+      "name": "square",
+      "namespace": "",
+      "return_type": {
+        "raw": "double",
+        "canonical": "double",
+        "base_type": "double",
+        "is_const": false,
+        "is_pointer": false,
+        "is_reference": false,
+        "is_array": false,
+        "array_size": null,
+        "pointee_type": null,
+        "kind": "float"
+      },
+      "params": [
+        {
+          "name": "x",
+          "type": {
+            "raw": "double",
+            "canonical": "double",
+            "base_type": "double",
+            "is_const": false,
+            "is_pointer": false,
+            "is_reference": false,
+            "is_array": false,
+            "array_size": null,
+            "pointee_type": null,
+            "kind": "float"
+          },
+          "default_value": null
+        }
+      ],
+      "is_variadic": false,
+      "source_file": "D:\\Program_Files\\MyProjects\\InterfaceTestTool\\header_parser\\test_cases\\simple.h",
+      "source_line": 13,
+      "comment": "/// Computes the square of a double-precision value."
+    },
+    {
+      "name": "is_positive",
+      "namespace": "",
+      "return_type": {
+        "raw": "int",
+        "canonical": "int",
+        "base_type": "int",
+        "is_const": false,
+        "is_pointer": false,
+        "is_reference": false,
+        "is_array": false,
+        "array_size": null,
+        "pointee_type": null,
+        "kind": "integer"
+      },
+      "params": [
+        {
+          "name": "n",
+          "type": {
+            "raw": "int",
+            "canonical": "int",
+            "base_type": "int",
+            "is_const": false,
+            "is_pointer": false,
+            "is_reference": false,
+            "is_array": false,
+            "array_size": null,
+            "pointee_type": null,
+            "kind": "integer"
+          },
+          "default_value": null
+        }
+      ],
+      "is_variadic": false,
+      "source_file": "D:\\Program_Files\\MyProjects\\InterfaceTestTool\\header_parser\\test_cases\\simple.h",
+      "source_line": 16,
+      "comment": "/// Returns true if the integer is positive."
+    },
+    {
+      "name": "print_message",
+      "namespace": "",
+      "return_type": {
+        "raw": "void",
+        "canonical": "void",
+        "base_type": "void",
+        "is_const": false,
+        "is_pointer": false,
+        "is_reference": false,
+        "is_array": false,
+        "array_size": null,
+        "pointee_type": null,
+        "kind": "void"
+      },
+      "params": [
+        {
+          "name": "msg",
+          "type": {
+            "raw": "const char *",
+            "canonical": "const char *",
+            "base_type": "char",
+            "is_const": false,
+            "is_pointer": true,
+            "is_reference": false,
+            "is_array": false,
+            "array_size": null,
+            "pointee_type": {
+              "raw": "const char",
+              "canonical": "const char",
+              "base_type": "char",
+              "is_const": true,
+              "is_pointer": false,
+              "is_reference": false,
+              "is_array": false,
+              "array_size": null,
+              "pointee_type": null,
+              "kind": "char"
+            },
+            "kind": "pointer"
+          },
+          "default_value": null
+        }
+      ],
+      "is_variadic": false,
+      "source_file": "D:\\Program_Files\\MyProjects\\InterfaceTestTool\\header_parser\\test_cases\\simple.h",
+      "source_line": 19,
+      "comment": "/// Prints a null-terminated string to stdout."
+    },
+    {
+      "name": "get_version",
+      "namespace": "",
+      "return_type": {
+        "raw": "const char *",
+        "canonical": "const char *",
+        "base_type": "char",
+        "is_const": false,
+        "is_pointer": true,
+        "is_reference": false,
+        "is_array": false,
+        "array_size": null,
+        "pointee_type": {
+          "raw": "const char",
+          "canonical": "const char",
+          "base_type": "char",
+          "is_const": true,
+          "is_pointer": false,
+          "is_reference": false,
+          "is_array": false,
+          "array_size": null,
+          "pointee_type": null,
+          "kind": "char"
+        },
+        "kind": "pointer"
+      },
+      "params": [],
+      "is_variadic": false,
+      "source_file": "D:\\Program_Files\\MyProjects\\InterfaceTestTool\\header_parser\\test_cases\\simple.h",
+      "source_line": 22,
+      "comment": "/// Returns a pointer to a static version string."
+    },
+    {
+      "name": "allocate_int",
+      "namespace": "",
+      "return_type": {
+        "raw": "int *",
+        "canonical": "int *",
+        "base_type": "int",
+        "is_const": false,
+        "is_pointer": true,
+        "is_reference": false,
+        "is_array": false,
+        "array_size": null,
+        "pointee_type": {
+          "raw": "int",
+          "canonical": "int",
+          "base_type": "int",
+          "is_const": false,
+          "is_pointer": false,
+          "is_reference": false,
+          "is_array": false,
+          "array_size": null,
+          "pointee_type": null,
+          "kind": "integer"
+        },
+        "kind": "pointer"
+      },
+      "params": [
+        {
+          "name": "value",
+          "type": {
+            "raw": "int",
+            "canonical": "int",
+            "base_type": "int",
+            "is_const": false,
+            "is_pointer": false,
+            "is_reference": false,
+            "is_array": false,
+            "array_size": null,
+            "pointee_type": null,
+            "kind": "integer"
+          },
+          "default_value": null
+        }
+      ],
+      "is_variadic": false,
+      "source_file": "D:\\Program_Files\\MyProjects\\InterfaceTestTool\\header_parser\\test_cases\\simple.h",
+      "source_line": 26,
+      "comment": "/// Allocates a new integer on the heap with the given value.\n/// Caller is responsible for freeing the returned pointer."
+    },
+    {
+      "name": "do_nothing",
+      "namespace": "",
+      "return_type": {
+        "raw": "void",
+        "canonical": "void",
+        "base_type": "void",
+        "is_const": false,
+        "is_pointer": false,
+        "is_reference": false,
+        "is_array": false,
+        "array_size": null,
+        "pointee_type": null,
+        "kind": "void"
+      },
+      "params": [],
+      "is_variadic": false,
+      "source_file": "D:\\Program_Files\\MyProjects\\InterfaceTestTool\\header_parser\\test_cases\\simple.h",
+      "source_line": 29,
+      "comment": "/// No-op placeholder function."
+    },
+    {
+      "name": "multiply_uint",
+      "namespace": "",
+      "return_type": {
+        "raw": "unsigned int",
+        "canonical": "unsigned int",
+        "base_type": "unsigned int",
+        "is_const": false,
+        "is_pointer": false,
+        "is_reference": false,
+        "is_array": false,
+        "array_size": null,
+        "pointee_type": null,
+        "kind": "integer"
+      },
+      "params": [
+        {
+          "name": "a",
+          "type": {
+            "raw": "unsigned int",
+            "canonical": "unsigned int",
+            "base_type": "unsigned int",
+            "is_const": false,
+            "is_pointer": false,
+            "is_reference": false,
+            "is_array": false,
+            "array_size": null,
+            "pointee_type": null,
+            "kind": "integer"
+          },
+          "default_value": null
+        },
+        {
+          "name": "b",
+          "type": {
+            "raw": "unsigned int",
+            "canonical": "unsigned int",
+            "base_type": "unsigned int",
+            "is_const": false,
+            "is_pointer": false,
+            "is_reference": false,
+            "is_array": false,
+            "array_size": null,
+            "pointee_type": null,
+            "kind": "integer"
+          },
+          "default_value": null
+        }
+      ],
+      "is_variadic": false,
+      "source_file": "D:\\Program_Files\\MyProjects\\InterfaceTestTool\\header_parser\\test_cases\\simple.h",
+      "source_line": 32,
+      "comment": "/// Multiplies two unsigned values."
+    }
+  ],
+  "enums": [],
+  "structs": [],
+  "parse_errors": [
+    {
+      "line": 16,
+      "message": "unknown type name 'bool'"
+    }
+  ]
+}
