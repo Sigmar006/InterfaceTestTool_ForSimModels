@@ -36,5 +36,4 @@ add_executable(auto_test test_main.cpp)
 target_include_directories(auto_test PRIVATE lib/)
 target_link_libraries(auto_test PRIVATE target_lib GTest::gtest_main)
 
-include(GoogleTest)
-gtest_discover_tests(auto_test)
+# Runner invokes auto_test directly; no ctest registration needed.
